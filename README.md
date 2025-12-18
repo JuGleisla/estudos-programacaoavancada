@@ -33,7 +33,13 @@ Sintaxe específica para variáveis do tipo ponteiro:
 
 Observação: Para evitar o risco de desreferenciar ponteiros selvagens (wild pointers), é recomendável que todos os ponteiros, ao serem criados sem que se possa definir seu valor correto, sejam inicializados com a constante "nullptr", que é um "endereço" que não aponta para nenhuma posição de memória válida e que encerrará o programa de forma ordenada caso seja desreferenciado: (int* pti (nullptr); // ou int* pti=nullptr;) 
 
-- NÃO SE PODE SOMAR PONTEIROS COM PONTEIROS, MAS SIM PONTEIROS COM INTEIROS!!!
+- NÃO SE PODE SOMAR PONTEIROS COM PONTEIROS, MAS SIM PONTEIROS COM INTEIROS!!!<br>
+
+Referências: 
+
+- Uma referência é um nome alternativo para uma variável existente. Ela não possui um bloco próprio de bytes na memória, pois ela pe aoenas outeono nome par ao mesmo bloco de memória ocupado pela variável previamente existente. O endereço de uma referência é o mesmo endereço da variável original. 
+- Sintaxe: (tipo_var& nome_var2(nome_var1): define (cria) uma variável denominada nome_var2 que faz referência (é um apelido) para a variável nome_nvar1, ambas do tipo tipo_var. Temos também, tipo_var& nome_var2 = nome_var1;)
+- Elas precisam ser inicializadas!
 > Alocação dinâmica de memória
 
 ## Funções
